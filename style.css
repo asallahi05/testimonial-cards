@@ -1,0 +1,106 @@
+* {
+  margin: 0%;
+  padding: 0%;
+}
+body {
+  background-color: rgb(229, 240, 248);
+  align-content: center;
+}
+.cards {
+  max-width: 1500px;
+  width: 90%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-areas:
+    " card1 card1 card2 card5  "
+    "  card3 card4 card4 card5  ";
+  margin: auto;
+  margin-top: 60px;
+  font-size: 16px;
+  gap: 20px;
+}
+.card1 {
+  background-color: rgb(110, 22, 187);
+  grid-area: card1;
+  border-radius: 10px;
+  padding: 30px;
+  z-index: 1;
+}
+.card2 {
+  background-color: rgb(96, 96, 123);
+  grid-area: card2;
+  border-radius: 10px;
+  padding: 30px;
+}
+.card3 {
+  background-color: rgb(222, 222, 222);
+  grid-area: card3;
+  border-radius: 10px;
+  padding: 30px;
+}
+.card4 {
+  background-color: rgb(66, 66, 73);
+  grid-area: card4;
+  border-radius: 10px;
+  padding: 30px;
+}
+.card5 {
+  background-color: rgb(255, 255, 255);
+  grid-area: card5;
+  border-radius: 10px;
+  padding: 30px;
+}
+img {
+  border-radius: 70px;
+  margin-bottom: 13px;
+  margin-top: -3px;
+  inline-size: 50px;
+}
+.icon {
+  z-index: -1;
+  position: absolute;
+  margin-top: -45px;
+  margin-left: 450px;
+  width: 95px;
+  height: 95px;
+}
+.profile {
+  display: flex;
+}
+.name__profile {
+  color: black;
+  margin-left: 15px;
+}
+.name-profile {
+  color: white;
+  margin-left: 15px;
+}
+
+.body-card {
+  color: aliceblue;
+  font-size: 15px;
+}
+.body_card {
+  color: black;
+  font-size: 15px;
+}
+.body-card p:last-child {
+  opacity: 70%;
+}
+.body_card p:last-child {
+  opacity: 70%;
+}
+h4 {
+  opacity: 70%;
+}
+@media (max-width: 400px) {
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .icon {
+    margin-left: 150px;
+    margin-top: 50px;
+  }
+}
